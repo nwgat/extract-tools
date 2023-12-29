@@ -1,0 +1,16 @@
+#!/bin/bash
+# nwgat.ninja
+
+ISOI=$1
+
+# create mount folder
+sudo mkdir -p /mnt/"$ISOI"
+
+# mount iso
+sudo mount -o loop "$ISOI" /mnt/"$ISOI"
+
+# copy data
+#sudo cp -r /mnt/"$ISOI" $PWD/"$ISOI".out
+sudo dbus-launch gcp -rv /mnt/"$ISOI" $PWD/"$ISOI".out
+# umount iso
+sudo umount /mnt/"$ISOI"

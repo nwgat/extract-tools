@@ -1,5 +1,8 @@
-# isoextract
+**isoextract**
 simple script to extract files from iso
+
+**subextract**
+extract subs from video files, requires ffmpeg
 
 # Install
 * `wget https://raw.githubusercontent.com/nwgat/isoextract/main/isoextract`
@@ -8,6 +11,6 @@ simple script to extract files from iso
 
 
 # .py to executable
-pip install pyinstaller
-cd /path/to/your/program
-pyinstaller --onefile yourscript.py
+* `pip install pyinstaller`
+* `cd /path/to/your/program`
+* `pyinstaller --onefile yourscript.py`
